@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Set html and body to full height */
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
@@ -14,20 +13,20 @@ html, body {
     line-height: 1.6;
 }
 
-
-
-/* Sections (Introduction, Permutation, Combination, Probability) */
+/* General Section Styling */
 .section {
-    margin-bottom: 36px;
-    background-color: #fce4ec; /* Light pink shade for section backgrounds */
+    margin: 20px auto;
     padding: 25px;
+    background-color: #fce4ec;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    text-align: left;
 }
 
 .section h2 {
-    color: #d81b60; /* Darker pink for section headers */
     font-size: 2rem;
+    color: #d81b60;
     margin-bottom: 15px;
 }
 
@@ -44,468 +43,188 @@ html, body {
     margin-bottom: 8px;
 }
 
-/* Simple Calculator Section */
+/* Responsive Video */
+video {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Simple Calculator */
 .simple-calculator {
-    background-color: #ffcce6; /* Light pink background */
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 400px;
+    background-color: #ffcce6;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    padding: 400px;
-    margin: 20px auto; /* Center align */
     text-align: center;
-  }
-  
-  .simple-calculator h2 {
-    color: #d81b60; /* Bold pink text */
+}
+
+.simple-calculator h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    color: #d81b60;
     font-weight: bold;
-  }
-  
-  .calculator-box {
+    margin-bottom: 15px;
+}
+
+.calculator-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-  }
-  
-  .calculator-input {
-    width: 90%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #f48fb1; /* Pink border */
-    border-radius: 5px;
-    background-color: white;
-  }
-  
-  .calculator-select {
+}
+
+.calculator-input,
+.calculator-select {
     width: 90%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #f48fb1;
     border-radius: 5px;
-    background-color: white;
-  }
-  
-  .button-group {
+}
+
+.button-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
     width: 100%;
-  }
-  
-  .calculate-btn,
-  .clear-btn {
-    width: 45%;
+}
+
+.calculate-btn,
+.clear-btn {
+    flex: 1;
     padding: 10px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .calculate-btn {
-    background-color: #4caf50; /* Green button */
+}
+
+.calculate-btn {
+    background-color: #4caf50;
     color: white;
-  }
-  
-  .clear-btn {
-    background-color: #f44336; /* Red button */
+}
+
+.clear-btn {
+    background-color: #f44336;
     color: white;
-  }
-  
-  .calculate-btn:hover,
-  .clear-btn:hover {
+}
+
+.calculate-btn:hover,
+.clear-btn:hover {
     opacity: 0.8;
-  }
-  
-  .result-text {
+}
+
+.result-text {
     margin-top: 15px;
     font-size: 1rem;
     color: #333;
-  }
-
-  video {
-    width: 100%; /* Makes the video responsive */
-    max-width: 600px; /* Set a maximum width */
-    display: block; /* Ensures the video is treated as a block element */
-    margin: 20px auto; /* Centers the video and adds some margin on top and bottom */
-    border: 2px solid #ccc; /* Adds a border around the video */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
 }
-/* Members Section */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
 
-  .container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-
-  .team-grid {
+/* Team Grid */
+.team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-  }
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  .team-card {
+.team-card {
     background: white;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-    padding: 2rem;
+    padding: 20px;
     text-align: center;
-  }
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-  .team-card:hover {
+.team-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  }
+}
 
-  .avatar-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.avatar-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
     background: #fce7f3;
     border: 4px solid #fbcfe8;
-    margin: 0 auto 1.5rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ec4899;
     font-size: 2rem;
-    color: #ec4899;
-  }
+}
 
-  .team-name {
+.team-name {
     font-size: 1.5rem;
+    margin-bottom: 5px;
     color: #1f2937;
-    margin-bottom: 0.5rem;
     font-weight: 600;
-  }
+}
 
-  .team-role {
+.team-role {
+    font-size: 0.875rem;
     color: #ec4899;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-
-  .team-description {
-    color: #4b5563;
-    font-size: 0.875rem;
-    line-height: 1.5;
-  }
-
-  @media (max-width: 768px) {
-    .team-grid {
-      grid-template-columns: 1fr;
-    }
-h2 {
-    text-align: center; /* Centers the text horizontally */
-    margin: 1px 1px; /* Adds space above and below for better layout */
-    font-size: 10rem; /* Optional: Adjust the font size */
-    color: #333; /* Optional: Customize the color */
-}
-
-
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Styles for buttons */
-.calculator {
-    background-color: #d9267e; /* Darker pink */
-    padding: 20px;
-    margin: 15px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(26, 13, 13, 0.2);
-}
-
-.calculator h2 {
-    font-size: 1.5rem;
-    color: #ffb3d9; /* Lighter pink for font */
-    margin-bottom: 15px;
-    
-}
-
-input[type="number"] {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2rem;
-    border: 2px solid #ff5db8; /* Medium pink */
-    border-radius: 8px;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: #fd8ac1; /* Subtle light pink background */
-    color: #ffffff; /* Darker pink text */
-}
-
-input[type="number"]:focus {
-    outline: none;
-    border-color: #ff7ec9; /* Slightly brighter pink */
-}
-
-button {
-    padding: 15px;
-    font-size: 1rem;
-    color: #ffffff;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px;
-    background-color: #e91e63;
-    align-items: center;
-    text-align: center;
-}
-
-button.result {
-    background-color: #ff5db8; /* Medium pink */
-}
-
-button.result:hover {
-    background-color: #ff7ec9; /* Lighter hover effect */
-}
-
-button.result:active {
-    background-color: #d9267e; /* Darker for active state */
-}
-
-button.erase {
-    background-color: #900a5b; /* Deep pink */
-}
-
-button.erase:hover {
-    background-color: #76084c; /* Slightly lighter hover effect */
-}
-
-button.erase:active {
-    background-color: #5e0438; /* Even darker for active state */
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    .navbar ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .header h1 {
-        font-size: 2.5rem;
-    }
-
-    .section h2, .calculator-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .calculator-section input, .calculator-section button {
-        width: 100%;
-    }
-
-    .calculator-section form {
-        width: 100%;
-    }
-    
-}
-/* General Reset and Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #f8cdda, #ff0059); /* Soft gradient background */
-    color: #333;
-    line-height: 1.6;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    text-align: center; /* Align all text to the left */
-    padding-left: 20px; /* Optional padding to add space from the left side */
-}
-
-/* Header */
-.header {
-    background: linear-gradient(to right, #ff6f91, #fc6f8c); /* Gradient for header */
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    color: white;
-    border-bottom: 5px solid #fef7f9;
-}
-
-.header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center; /* Ensure header text is aligned left */
+    margin-bottom: 10px;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #ff3b61; /* Solid color for navbar */
+    background-color: #ff3b61;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar ul {
-    list-style: none;
     display: flex;
-    justify-content: flex-start; /* Align navbar items to the left */
-    gap: 30px;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 8px 20px;
+    padding: 8px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #ff6f91; /* Soft hover effect */
-    transform: translateY(-2px);
-}
-
-/* Introduction Section */
-.section {
-    background-color: rgba(255, 255, 255, 0.9); /* Light opaque background */
-    padding: 40px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Ensure text is aligned left in sections */
-}
-
-.section h2 {
-    font-size: 2.5rem;
-    color: #e91e63;
-    margin-bottom: 20px;
-}
-
-.section p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Member Section */
-.members {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
-    justify-items: start; /* Align items to the left in grid */
-}
-
-.member {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Left align text in member cards */
-    padding: 20px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.member:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.member-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-top: -60px;
-    border: 5px solid #ff6f91;
-    margin-left: 20px; /* Ensure image stays aligned */
-}
-
-.member-info {
-    padding: 20px;
-}
-
-.member-info h3 {
-    color: #ff3b61;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-}
-
-.member-info p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Instructor Section */
-.Instructor {
-    background-color: #fffae6; /* Soft yellowish background */
-    padding: 30px;
-    border-radius: 12px;
-    text-align: left; /* Align text to the left */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.Instructor h3 {
-    font-size: 2rem;
-    color: #ff6f91;
-    margin-bottom: 10px;
-}
-
-.Instructor p {
-    font-size: 1.2rem;
-    color: #333;
+    background-color: #ff6f91;
 }
 
 /* Footer */
 .footer {
-    background-color: #ff6f91; /* Same as navbar */
+    background-color: #ff3b61;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+    padding: 15px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        gap: 15px;
+    .section h2 {
+        font-size: 1.8rem;
     }
 
-    .members {
+    .team-grid {
         grid-template-columns: 1fr;
     }
 
-    .header h1 {
-        font-size: 2.5rem;
-    }
-
-    .section h2 {
-        font-size: 2rem;
-    }
-
-    .member-img {
-        width: 100px;
-        height: 100px;
+    .simple-calculator {
+        width: 100%;
     }
 }
-
-
